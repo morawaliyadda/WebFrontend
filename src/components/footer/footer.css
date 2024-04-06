@@ -1,0 +1,149 @@
+.container {
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--primary-color);
+
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+.column {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.column2 {
+    margin-top: 1rem;
+    margin-right: 4rem;
+    flex: 1;
+    display: flex;
+    gap: 10rem;
+
+}
+
+
+
+.footer-about-heding {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+
+}
+.column2 h5,
+.column h5 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px;
+
+}
+.column2 h6,
+.column h6 {
+    font-size: 18px;
+    margin-left: 40px;
+    font-weight: 400;
+    width: 60%;
+    color: #fff;
+}
+
+.column2 ul,
+.column ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.column2 ul li,
+.column ul li {
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.column2 ul li a,
+.column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .text-center {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer p::before {
+    content: '';
+    display: block;
+    width: 800px;
+    padding-bottom: 0px;
+    margin: 10px auto;
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .column {
+        width: 100%;
+    }
+    .column2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer p::before {
+        width: 400px;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .column {
+        width: 100%;
+        margin-left: 10rem;
+    }
+    .column2 {
+        width: 100%;
+        margin-left: 17rem;
+    }
+
+    .container {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+
+
+    .footer p::before {
+        width: 500px;
+
+    }
+
+}
